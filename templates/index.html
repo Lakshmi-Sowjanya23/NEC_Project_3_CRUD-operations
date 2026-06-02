@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>CRUD Operations</h1>
+
+    <form action="/add" method="POST" class="add-form">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+            required
+        >
+
+        <input
+            type="number"
+            name="age"
+            placeholder="Enter Age"
+            required
+        >
+
+        <button type="submit" class="add-btn">
+            Add
+        </button>
+
+    </form>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Edit / Update</th>
+            <th>Delete</th>
+        </tr>
+
+        {% for record in records %}
+        <tr>
+
+            <form action="/edit/{{ loop.index0 }}" method="POST">
+
+                <td>
+                    <input
+                        type="text"
+                        name="name"
+                        value="{{ record.name }}"
+                        required
+                    >
+                </td>
+
+                <td>
+                    <input
+                        type="number"
+                        name="age"
+                        value="{{ record.age }}"
+                        required
+                    >
+                </td>
+
+                <td>
+                    <button type="submit" class="edit-btn">
+                        Update
+                    </button>
+                </td>
+
+                <td>
+                    <a href="/delete/{{ loop.index0 }}">
+                        <button type="button" class="delete-btn">
+                            Delete
+                        </button>
+                    </a>
+                </td>
+
+            </form>
+
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</div>
+
+</body>
+</html>
