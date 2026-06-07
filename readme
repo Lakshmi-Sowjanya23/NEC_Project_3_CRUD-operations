@@ -12,20 +12,20 @@ A simple CRUD (Create, Read, Update, Delete) web application built using Flask, 
 
 ## Features
 
-- Add new records (Name and Age)
-- View all records
-- Update existing records
-- Delete records
-- Data stored permanently in a JSON file
-- Simple and attractive user interface
+* Add new records (Name and Age)
+* View all records
+* Update existing records
+* Delete records
+* Data stored permanently in a JSON file
+* Simple and attractive user interface
 
 ## Technologies Used
 
-- Python
-- Flask
-- HTML
-- CSS
-- JSON
+* Python
+* Flask
+* HTML
+* CSS
+* JSON
 
 ## Project Structure
 
@@ -77,15 +77,19 @@ http://127.0.0.1:5000
 ## CRUD Operations
 
 ### Create
+
 Enter Name and Age and click the **Add** button to create a new record.
 
 ### Read
+
 All records are displayed in a table.
 
 ### Update
+
 Modify the Name or Age in the table and click the **Update** button.
 
 ### Delete
+
 Click the **Delete** button to remove a record.
 
 ## Storage
@@ -94,10 +98,10 @@ Data is stored in the `data.json` file and remains available even after restarti
 
 ## Future Enhancements
 
-- Search functionality
-- Database integration (MySQL)
-- User authentication
-- Responsive mobile design
+* Search functionality
+* Database integration (MySQL)
+* User authentication
+* Responsive mobile design
 
 ## Author
 
