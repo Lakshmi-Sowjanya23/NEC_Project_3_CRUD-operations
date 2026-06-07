@@ -2,10 +2,8 @@
 
 # Output
 
-## Home Page
-
 <p align="center">
-  <img src="output/output.png" width="800">
+  <img src="output.png" width="800">
 </p>
 
 A simple CRUD (Create, Read, Update, Delete) web application built using Flask, HTML, CSS, and JSON file storage.
